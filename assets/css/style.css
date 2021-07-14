@@ -5,6 +5,7 @@ Default css
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 h1,
 h2,
@@ -28,6 +29,230 @@ a {
 a:hover {
     text-decoration: none;
 }
+.container{
+    max-width:1160px;
+    width: 100%;
+    margin: 0 auto;
+}
 /* Header css  */
+.header_area_design{
+    position: absolute;
+    z-index: 999999;
+    width: 100%;
+    height: auto;
+    top: 34px;
+    left: 0;
+}
+.header_menu_login{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.main_menu{
+    align-items: center;
+}
+.main_menu ul {
+    display: flex;
+}
+.main_menu ul li{
+}
+.main_menu ul li a{
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: 500;
+    padding: 10px 20px;
+    display: inline-block;
+    line-height: normal;
+    transition: 0.2s;
+}
+.main_menu ul li:hover a{
+    opacity: 0.8;
+}
+.login{
+}
+.button_1{
+    display: flex;
+    align-items: center;
+    background: #E02C6D;
+    padding: 10px 24px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.button_1:before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height:100%;
+    background: #BD2F62;
+    left: -100%;
+    top: 0;
+    z-index: -1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.button_1:hover::before{
+    left: 0;
+}
+.button_1 img{
+    width: 23px;
+}
+.button_1 span{
+    padding-left: 7px;
+}
+.button_1 i{
+    padding-left: 6px;
+    font-size: 19px;
+    line-height: normal;
+}
+.button_2{
+    
+    display: inline-block;
+    margin-top: 25px;
+}
 
 /* End Header css  */
+
+/* Banner Area design  */
+.banner_area_design{
+    padding: 150px 0px;
+    padding-bottom: 85px;
+    background: #2D25A0;
+}
+
+.banner_all_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner_left_con{
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+.banner_left_con h1{
+    font-size: 64px;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.banner_right_con{
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+.banner_right_con img{
+    width: 100%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.banner_area_design:hover .banner_right_con img{
+    transform: scale(1.030);
+    -webkit-transform: scale(1.030);
+    -moz-transform: scale(1.030);
+    -ms-transform: scale(1.030);
+    -o-transform: scale(1.030);
+}
+/* End Banner area design  */
+
+/* Player area design  */
+.player_area_design{
+    padding: 70px 0;
+    overflow: hidden;
+}
+.all_player_details{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+}
+.single_player{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.image{
+    overflow: hidden;
+    height: 280px;
+    margin-bottom: 9px;
+}
+.image:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.image img{
+    width: 100%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+.player_details{
+}
+.player_details h2{
+    color: #18191F;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 6px 0;
+    display:block;
+}
+.player_details p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+}
+/* End Player area design  */
+
+/* Highlights area design  */
+.highlight_area_design{
+    padding: 51px 0;
+    padding-bottom: 100px;
+}
+.highlight_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.highlight_single{
+    flex: 0 0 48%;
+    max-width: 48%;
+    overflow: hidden;
+}
+.highlight_single h2{
+    font-size: 48px;
+    line-height: 1.1;
+    margin-bottom: 13px;
+    font-weight: 700;
+}
+.highlight_single p{
+    font-size: 16px;
+    color: #6C6C6C;
+    max-width: 413px;
+    width: 100%;
+}
+.highlight_single a{
+}
+.highlight_single img{
+    width: 100%;
+}
+/* End Highlights area design  */
